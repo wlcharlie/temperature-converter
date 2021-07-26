@@ -8,6 +8,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: "Titillium Web";
 }
 
 .link {
@@ -18,9 +19,4 @@
   cursor: pointer;
   transition: none !important;
   box-shadow: none !important;
-  -webkit-tap-highlight-color: rgb(0, 0, 0, 0.2);
-}
-
-.reset option {
-  background-color: #282c34;
 }
