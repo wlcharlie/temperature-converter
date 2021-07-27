@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/temperature-converter/static/css/main.c064a856.chunk.css",
+    "main.js": "/temperature-converter/static/js/main.3b8b1524.chunk.js",
+    "main.js.map": "/temperature-converter/static/js/main.3b8b1524.chunk.js.map",
+    "runtime-main.js": "/temperature-converter/static/js/runtime-main.f2db0e91.js",
+    "runtime-main.js.map": "/temperature-converter/static/js/runtime-main.f2db0e91.js.map",
+    "static/js/2.4c21dadb.chunk.js": "/temperature-converter/static/js/2.4c21dadb.chunk.js",
+    "static/js/2.4c21dadb.chunk.js.map": "/temperature-converter/static/js/2.4c21dadb.chunk.js.map",
+    "static/js/3.6bca93c3.chunk.js": "/temperature-converter/static/js/3.6bca93c3.chunk.js",
+    "static/js/3.6bca93c3.chunk.js.map": "/temperature-converter/static/js/3.6bca93c3.chunk.js.map",
+    "index.html": "/temperature-converter/index.html",
+    "static/css/main.c064a856.chunk.css.map": "/temperature-converter/static/css/main.c064a856.chunk.css.map",
+    "static/js/2.4c21dadb.chunk.js.LICENSE.txt": "/temperature-converter/static/js/2.4c21dadb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f2db0e91.js",
+    "static/js/2.4c21dadb.chunk.js",
+    "static/css/main.c064a856.chunk.css",
+    "static/js/main.3b8b1524.chunk.js"
+  ]
+}
