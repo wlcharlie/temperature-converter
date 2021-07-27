@@ -2,7 +2,11 @@ import "./App.css"
 import TempInputs from "./components/TempInputs"
 
 function App() {
-  return <TempInputs />
+  return (
+    <div>
+      <TempInputs />
+    </div>
+  )
 }
 
 export default App

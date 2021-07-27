@@ -2,14 +2,18 @@
   font-family: "Titillium web";
 }
 
-.row {
+#root {
+  background-color: #272727;
+}
+
+.input {
   margin: 0 0 0 0;
   width: 100%;
   height: 100vh;
 }
 
 /* row col */
-.row div {
+.input div {
   padding: 1rem;
   color: #eeeeee;
   display: flex;
@@ -31,7 +35,7 @@
 
 textarea {
   cursor: pointer;
-  height: 100%;
+  height: 80%;
   transition: none !important;
   box-shadow: none !important;
   color: #eeeeee !important;

@@ -24,11 +24,9 @@ const TempInputs = () => {
     setTempF((32 + (9 / 5) * (-273 + +event.target.value)).toFixed(2))
   }
 
-  const getTemp = (event) => {}
-
   return (
-    <Row>
-      <Col id="tempC" xs={12} lg={4}>
+    <Row className="input">
+      <Col id="tempC" xs={10} lg={4}>
         <Form.Control
           as="textarea"
           maxLength="12"
@@ -39,7 +37,10 @@ const TempInputs = () => {
         />
         <div className="tempSign">{"\xB0"}C</div>
       </Col>
-      <Col id="tempF" xs={12} lg={4}>
+      <Col className="d-lg-none text-end" xs={2}>
+        Temperature Converter
+      </Col>
+      <Col id="tempF" xs={10} lg={4}>
         <Form.Control
           as="textarea"
           maxLength="12"
@@ -50,7 +51,13 @@ const TempInputs = () => {
         />
         <div className="tempSign">{"\xB0"}F</div>
       </Col>
-      <Col id="tempK" xs={12} lg={4}>
+      <Col
+        className="d-lg-none d-flex justify-content-center align-items-center"
+        xs={2}
+      >
+        <i class="fab fa-github fa-2x"></i>
+      </Col>
+      <Col id="tempK" xs={10} lg={4}>
         <Form.Control
           as="textarea"
           maxLength="12"
@@ -60,6 +67,12 @@ const TempInputs = () => {
           onChange={getTempK}
         />
         <div className="tempSign">K.</div>
+      </Col>
+      <Col
+        className="d-lg-none d-flex justify-content-center align-items-center"
+        xs={2}
+      >
+        <i class="fas fa-home fa-2x"></i>
       </Col>
     </Row>
   )
