@@ -1,22 +1,53 @@
-.App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  font-family: "Titillium web";
+}
+
+.row {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* row col */
+.row div {
+  padding: 1rem;
+  color: #eeeeee;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: "Titillium Web";
+  align-items: flex-end;
 }
 
-.link {
-  color: #61dafb;
+#tempC {
+  background-color: #085aa3;
 }
 
-.reset {
+#tempF {
+  background-color: #2b2a40;
+}
+
+#tempK {
+  background-color: #2e2c30;
+}
+
+input {
   cursor: pointer;
+  height: 100%;
   transition: none !important;
   box-shadow: none !important;
+  color: #eeeeee !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-control {
+  font-size: 10vw;
+}
+
+.tempNum {
+  font-size: 6rem;
 }
