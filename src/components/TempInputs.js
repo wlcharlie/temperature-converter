@@ -37,8 +37,11 @@ const TempInputs = () => {
         />
         <div className="tempSign">{"\xB0"}C</div>
       </Col>
-      <Col className="d-lg-none text-end" xs={2}>
-        Temperature Converter
+      <Col
+        className="d-lg-none align-items-start text-wrap title fst-italic"
+        xs={2}
+      >
+        Temp. Converter
       </Col>
       <Col id="tempF" xs={10} lg={4}>
         <Form.Control
@@ -55,7 +58,9 @@ const TempInputs = () => {
         className="d-lg-none d-flex justify-content-center align-items-center"
         xs={2}
       >
-        <i class="fab fa-github fa-2x"></i>
+        <a href="https://github.com/wlcharlie/temperature-converter">
+          <i className="fab fa-github fa-2x text-light" />
+        </a>
       </Col>
       <Col id="tempK" xs={10} lg={4}>
         <Form.Control
@@ -72,7 +77,32 @@ const TempInputs = () => {
         className="d-lg-none d-flex justify-content-center align-items-center"
         xs={2}
       >
-        <i class="fas fa-home fa-2x"></i>
+        <a href="https://wlcharlie.github.io/">
+          <i className="fas fa-home fa-2x text-light" />
+        </a>
+      </Col>
+      <Col
+        className="d-none d-lg-flex h3 align-items-center justify-content-center"
+        lg={12}
+      >
+        <div className="d-flex flex-row align-items-center">
+          <h3>Temperature Converter | </h3>
+          <a
+            className="mx-3"
+            href="https://wlcharlie.github.io/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i className="fas fa-home fa-x text-light" />
+          </a>
+          <a
+            href="https://github.com/wlcharlie/temperature-converter"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <i className="fab fa-github fa-x text-light" />
+          </a>
+        </div>
       </Col>
     </Row>
   )
