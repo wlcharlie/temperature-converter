@@ -24,19 +24,42 @@ const TempInputs = () => {
     setTempF((32 + (9 / 5) * (-273 + +event.target.value)).toFixed(2))
   }
 
+  const getTemp = (event) => {}
+
   return (
     <Row>
-      <Col id="tempC" xs={12} xl={4}>
-        <Form.Control as="textarea" value={tempC} onChange={getTempC} />
-        <div className="tempNum">{"\xB0"}C</div>
+      <Col id="tempC" xs={12} lg={4}>
+        <Form.Control
+          as="textarea"
+          maxLength="12"
+          rows="1"
+          value={tempC}
+          data-temp="C"
+          onChange={getTempC}
+        />
+        <div className="tempSign">{"\xB0"}C</div>
       </Col>
-      <Col id="tempF" xs={12} xl={4}>
-        <Form.Control as="textarea" value={tempF} onChange={getTempF} />
-        <div className="tempNum">{"\xB0"}F</div>
+      <Col id="tempF" xs={12} lg={4}>
+        <Form.Control
+          as="textarea"
+          maxLength="12"
+          rows="1"
+          value={tempF}
+          data-temp="F"
+          onChange={getTempF}
+        />
+        <div className="tempSign">{"\xB0"}F</div>
       </Col>
-      <Col id="tempK" xs={12} xl={4}>
-        <Form.Control as="textarea" value={tempK} onChange={getTempK} />
-        <div className="tempNum">K.</div>
+      <Col id="tempK" xs={12} lg={4}>
+        <Form.Control
+          as="textarea"
+          maxLength="12"
+          rows="1"
+          value={tempK}
+          data-temp="K"
+          onChange={getTempK}
+        />
+        <div className="tempSign">K.</div>
       </Col>
     </Row>
   )
