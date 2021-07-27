@@ -13,6 +13,7 @@
   padding: 1rem;
   color: #eeeeee;
   display: flex;
+  flex-wrap: column;
   align-items: flex-end;
 }
 
@@ -28,7 +29,7 @@
   background-color: #2e2c30;
 }
 
-input {
+textarea {
   cursor: pointer;
   height: 100%;
   transition: none !important;
@@ -36,16 +37,12 @@ input {
   color: #eeeeee !important;
   border: none !important;
   background-color: transparent !important;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  resize: none;
+  overflow: hidden;
 }
 
 .form-control {
-  font-size: 10vw;
+  font-size: 7vw;
 }
 
 .tempNum {
